@@ -1,7 +1,8 @@
 # SpotifyStats — Your Personal Discord Spotify Analytics Bot
 
-SpotifyStats is a Discord bot that tracks your **Spotify listening activity** and visualizes it through beautiful charts and detailed statistics.  
-You can view daily, weekly, monthly, and yearly insights — along with top artists, songs, genres, and more.
+SpotifyStats is a Discord bot that tracks your **Spotify listening activity** and visualizes it through beautiful charts and detailed statistics. 
+
+You can view daily, weekly, monthly, and yearly insights - along with top artists, songs, genres, and more.
 
 ## Installation & Setup
 
