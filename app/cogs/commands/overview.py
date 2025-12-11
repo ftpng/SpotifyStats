@@ -17,6 +17,8 @@ class Overview(commands.Cog):
         name="overview",
         description="Show your full Spotify listening overview for this year."
     )
+    @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
+    @app_commands.allowed_installs(guilds=True, users=True)
     async def overview(self, interaction: discord.Interaction) -> None:
         await interaction.response.defer()
 

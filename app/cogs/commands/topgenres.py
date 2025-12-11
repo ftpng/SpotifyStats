@@ -14,6 +14,8 @@ class TopGenres(commands.Cog):
         name="topgenres",
         description="Show your most listened-to music genres."
     )
+    @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
+    @app_commands.allowed_installs(guilds=True, users=True)
     async def topgenres(self, interaction: discord.Interaction) -> None:
         await interaction.response.defer()
         

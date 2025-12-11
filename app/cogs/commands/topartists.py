@@ -14,6 +14,8 @@ class TopArtists(commands.Cog):
         name="topartists",
         description="Show your top 10 most listened-to artists."
     )
+    @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
+    @app_commands.allowed_installs(guilds=True, users=True)
     async def topartists(self, interaction: discord.Interaction) -> None:
         await interaction.response.defer()
         

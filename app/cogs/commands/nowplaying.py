@@ -14,6 +14,8 @@ class NowPlaying(commands.Cog):
         name="nowplaying", 
         description="Show currently listening to on Spotify."
     )
+    @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
+    @app_commands.allowed_installs(guilds=True, users=True)
     async def nowplaying(self, interaction: Interaction):
         await interaction.response.defer()
         

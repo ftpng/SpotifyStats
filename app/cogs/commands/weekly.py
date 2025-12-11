@@ -16,6 +16,8 @@ class Weekly(commands.Cog):
         name="weekly",
         description="Show your listening stats for the current week."
     )
+    @app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
+    @app_commands.allowed_installs(guilds=True, users=True)
     async def weekly(self, interaction: discord.Interaction) -> None:
         await interaction.response.defer()
 
